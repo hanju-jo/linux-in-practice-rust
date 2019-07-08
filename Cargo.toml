@@ -1,0 +1,33 @@
+[package]
+name = "linux_in_practice_rust"
+version = "0.1.0"
+authors = ["Hanju Jo <dev.hanju.jo@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+nix = "0.14.1"
+chrono = "0.4"
+
+[[bin]]
+name = "hello"
+path = "src/bin/02-syscall-and-non-kernel-os/hello.rs"
+
+[[bin]]
+name = "loop"
+path = "src/bin/02-syscall-and-non-kernel-os/loop.rs"
+
+[[bin]]
+name = "ppidloop"
+path = "src/bin/02-syscall-and-non-kernel-os/ppidloop.rs"
+
+[[bin]]
+name = "fork"
+path = "src/bin/03-process-management/fork.rs"
+
+[[bin]]
+name = "fork_and_exec"
+path = "src/bin/03-process-management/fork_and_exec.rs"
+
+[[bin]]
+name = "sched"
+path = "src/bin/04-process-scheduler/sched.rs"
